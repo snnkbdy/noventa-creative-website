@@ -86,3 +86,16 @@ section[id]{scroll-margin-top:96px}
 .project-button:focus-visible .project-art{outline:2px solid var(--blue);outline-offset:5px}
 .hero-webgl-fallback{z-index:0}
 @media(prefers-reduced-motion:reduce){.hero h1 b,.scroll svg{animation:none}}
+
+
+/* Noventa liquid-glass navigation */
+.header{gap:clamp(12px,2.2vw,32px)}
+.noventa-liquid-nav{margin-left:auto;flex:none}
+.noventa-liquid-nav .nimbus-glass{background:rgba(255,255,255,.52);border-color:rgba(255,255,255,.85);box-shadow:inset 0 1px 1px rgba(255,255,255,.95),inset 0 0 0 1px rgba(255,255,255,.58),0 9px 26px -15px rgba(32,50,70,.36),0 2px 5px rgba(32,50,70,.08)}
+.noventa-liquid-nav .nimbus-item{font-size:12px;font-weight:650;color:rgba(32,33,30,.62);padding-inline:14px}
+.noventa-liquid-nav .nimbus-item:hover,.noventa-liquid-nav .nimbus-item[aria-current="page"]{color:#20211e}
+.noventa-liquid-nav .nimbus-drop{background:radial-gradient(120% 140% at 30% 0%,rgba(255,255,255,.94),rgba(255,255,255,0) 55%),rgba(255,255,255,.72);box-shadow:inset 0 1px 1px #fff,inset 0 -2px 6px rgba(255,91,53,.12),inset 0 0 0 1px rgba(255,255,255,.8),0 6px 16px -6px rgba(50,70,90,.22)}
+.noventa-liquid-nav .nimbus-item:focus-visible{outline-color:var(--orange)}
+@media(max-width:900px){.noventa-liquid-nav .nimbus-item{padding-inline:12px}.header-cta{display:none}}
+@media(max-width:640px){.header{padding:0 6vw;gap:12px}.noventa-liquid-nav{margin-left:auto}.noventa-liquid-nav .nimbus-item{padding-inline:13px}.noventa-liquid-nav .nv-ico svg{width:17px;height:17px}}
+@media(max-width:360px){.header{gap:7px}.logo{font-size:23px}.noventa-liquid-nav .nimbus-item{padding-inline:11px}}
