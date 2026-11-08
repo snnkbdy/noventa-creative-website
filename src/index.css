@@ -14,3 +14,12 @@
 .header{position:sticky;top:0;backdrop-filter:blur(14px);background:rgba(245,244,239,.92)}
 @keyframes tickerMove{to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
+
+/* Three.js hero scene */
+.hero-art{isolation:isolate;background:radial-gradient(ellipse at 50% 48%,#f8c3ae 0%,#dce4df 42%,#dce4df 100%)}
+.hero-webgl{position:absolute;inset:0;z-index:1;cursor:grab}
+.hero-webgl:active{cursor:grabbing}
+.hero-webgl canvas{display:block;width:100%;height:100%}
+.hero-art .art-foot{z-index:2;pointer-events:none}
+@media(max-width:640px){.hero-webgl{inset:0}}
+@media(prefers-reduced-motion:reduce){.hero-webgl{cursor:default}}
