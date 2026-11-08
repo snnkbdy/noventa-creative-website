@@ -102,3 +102,11 @@ section[id]{scroll-margin-top:96px}
 
 /* Tumble Deck portfolio gallery */
 .work-gallery-intro{display:flex;justify-content:space-between;align-items:center;gap:24px;margin:0 0 14px}.work-gallery-intro>p{font-size:11px;line-height:1.7;color:#777;max-width:310px;text-align:right}.td-root{border-radius:3px;background:var(--paper)!important}.projects-label{display:flex;justify-content:space-between;align-items:center;margin:30px 0 28px;padding-top:20px;border-top:1px solid var(--line)}.projects-label>span:last-child{font-size:11px;color:#777}@media(max-width:640px){.work-gallery-intro{align-items:flex-start;flex-direction:column;gap:7px}.work-gallery-intro>p{text-align:left;margin:0}.projects-label{align-items:flex-start;flex-direction:column;gap:8px}.td-root{height:560px!important}}
+
+/* Reference-inspired particle morph animation in portfolio */
+.particle-gallery{position:relative;height:clamp(230px,31vw,390px);margin:24px 0 34px;overflow:hidden;background:#e8e5df;border:1px solid rgba(40,35,30,.08)}
+.particle-gallery canvas{display:block;width:100%;height:100%;touch-action:pan-y}
+.particle-caption{position:absolute;left:22px;bottom:18px;font:10px 'DM Mono',monospace;letter-spacing:.17em;color:rgba(38,34,30,.65);pointer-events:none}
+.particle-caption i{color:var(--orange);font-style:normal;padding:0 8px}
+@media(max-width:640px){.particle-gallery{height:230px;margin:18px 0 26px}}
+@media(prefers-reduced-motion:reduce){.particle-gallery canvas{animation:none}}
