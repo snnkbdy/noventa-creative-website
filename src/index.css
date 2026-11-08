@@ -23,3 +23,6 @@
 .hero-art .art-foot{z-index:2;pointer-events:none}
 @media(max-width:640px){.hero-webgl{inset:0}}
 @media(prefers-reduced-motion:reduce){.hero-webgl{cursor:default}}
+
+.hero-webgl-fallback{position:absolute;inset:0;display:grid;place-items:center;color:#ff5b35;font-size:clamp(110px,18vw,240px);font-weight:800;letter-spacing:-.12em;text-shadow:0 25px 70px #e35a4040;pointer-events:none}
+.hero-webgl canvas{position:relative;z-index:1}
