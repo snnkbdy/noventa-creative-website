@@ -44,3 +44,9 @@
 .case-modal ul{padding-left:18px;color:#686963;font-size:12px;line-height:2}
 .case-modal small{display:block;margin-top:24px;color:#999;font-size:10px;line-height:1.6}
 @media(max-width:640px){.case-overlay{padding:12px}.case-modal{max-height:92vh;padding:25px 20px}.case-art{height:135px}.case-art strong{font-size:85px}}
+
+/* Contact and mobile navigation clarity */
+.social-note{margin-top:36px!important;padding-top:16px;border-top:1px solid var(--line);font-size:11px!important;color:#85867f!important}
+.menu:focus-visible,.header a:focus-visible,.contact form button:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+.menu{cursor:pointer}
+@media(max-width:640px){.social-note{margin-top:24px!important}}
