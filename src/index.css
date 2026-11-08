@@ -26,3 +26,21 @@
 
 .hero-webgl-fallback{position:absolute;inset:0;display:grid;place-items:center;color:#ff5b35;font-size:clamp(110px,18vw,240px);font-weight:800;letter-spacing:-.12em;text-shadow:0 25px 70px #e35a4040;pointer-events:none}
 .hero-webgl canvas{position:relative;z-index:1}
+
+/* Accessible interactive concept case studies */
+.project-button{display:block;width:100%;padding:0;border:0;background:transparent;color:inherit;text-align:left;font:inherit;cursor:pointer}
+.project-button:focus-visible{outline:2px solid var(--blue);outline-offset:7px}
+.case-overlay{position:fixed;inset:0;z-index:80;background:rgba(27,29,26,.48);backdrop-filter:blur(9px);display:grid;place-items:center;padding:22px}
+.case-modal{position:relative;width:min(620px,100%);max-height:min(88vh,900px);overflow:auto;background:var(--paper);padding:clamp(25px,5vw,48px);box-shadow:0 25px 100px #17191635}
+.case-close{position:absolute;right:20px;top:20px;width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:transparent;display:grid;place-items:center;cursor:pointer}
+.case-art{height:170px;margin:28px 0 24px;display:grid;place-items:center;overflow:hidden}
+.case-art strong{font-size:110px;letter-spacing:-.12em}
+.case-art.form{background:#f1a58b;color:#27251f}.case-art.habit{background:#cbd2f8;color:#3841a2}.case-art.off{background:#e6ddc9;color:#d64e32}
+.case-art.habit strong{font-size:75px;transform:rotate(-9deg)}.case-art.off strong{font-family:Georgia,serif;font-style:italic;font-weight:400}
+.case-modal h3{font-size:clamp(32px,5vw,48px);letter-spacing:-.07em;margin:0 0 14px}
+.case-modal p{font-size:13px;line-height:1.8;color:#686963;max-width:480px}
+.case-modal .case-summary{font-size:16px;color:var(--ink);font-weight:600}
+.case-label{display:block;margin-top:24px;font:10px 'DM Mono';letter-spacing:.1em;color:var(--orange)}
+.case-modal ul{padding-left:18px;color:#686963;font-size:12px;line-height:2}
+.case-modal small{display:block;margin-top:24px;color:#999;font-size:10px;line-height:1.6}
+@media(max-width:640px){.case-overlay{padding:12px}.case-modal{max-height:92vh;padding:25px 20px}.case-art{height:135px}.case-art strong{font-size:85px}}
