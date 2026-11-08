@@ -73,3 +73,16 @@ section[id]{scroll-margin-top:96px}
 .faq-item>p{font-size:12px;line-height:1.9;color:#6c6d67;max-width:520px;margin:0 42px 25px}
 .faq-item summary:focus-visible{outline:2px solid var(--blue);outline-offset:5px}
 @media(max-width:700px){.faq{grid-template-columns:1fr;gap:32px}.faq-head h2{margin:36px 0 14px}.faq-item summary{font-size:13px;padding:20px 0}.faq-item summary>span{gap:13px}.faq-item>p{margin-left:28px}}
+
+
+/* Richer typographic portfolio artwork */
+.project-art.form:before,.project-art.habit:before,.project-art.off:before{content:'';position:absolute;inset:9%;border:1px solid currentColor;opacity:.28;pointer-events:none}
+.project-art.form:after{content:'FORM FOLLOWS FEELING';position:absolute;left:8%;bottom:17%;font:clamp(8px,1vw,12px) 'DM Mono';letter-spacing:.18em;transform:rotate(-90deg);transform-origin:left center;opacity:.75}
+.project-art.habit:after{content:'GOOD\A ENERGY\A ONLY';white-space:pre;position:absolute;right:8%;top:22%;font:clamp(10px,1.5vw,18px) 'DM Mono';line-height:1.5;letter-spacing:.12em;text-align:right;opacity:.75}
+.project-art.off:after{content:'OUTSIDE THE LINES';position:absolute;right:8%;bottom:15%;font:clamp(8px,1vw,12px) 'DM Mono';letter-spacing:.2em;transform:rotate(-90deg);transform-origin:right center;opacity:.75}
+.project-art.form>strong{position:relative;z-index:1;text-shadow:10px 12px 0 #fff4}
+.project-art.habit>strong{position:relative;z-index:1;text-shadow:7px 8px 0 #ffffff70}
+.project-art.off>strong{position:relative;z-index:1;text-shadow:8px 10px 0 #d64e3220}
+.project-button:focus-visible .project-art{outline:2px solid var(--blue);outline-offset:5px}
+.hero-webgl-fallback{z-index:0}
+@media(prefers-reduced-motion:reduce){.hero h1 b,.scroll svg{animation:none}}
