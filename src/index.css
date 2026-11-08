@@ -56,3 +56,20 @@
 .skip-link:focus{transform:translateY(0)}
 section[id]{scroll-margin-top:96px}
 @media(max-width:640px){section[id]{scroll-margin-top:78px}}
+
+/* Editorial FAQ section */
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:10vw;background:#e9eae3}
+.faq-head h2{font-size:clamp(48px,7vw,92px);line-height:.95;letter-spacing:-.08em;margin:55px 0 22px}
+.faq-head h2 em{font-family:Georgia,serif;font-weight:400;color:var(--orange)}
+.faq-head>p{max-width:260px;font-size:12px;line-height:1.8;color:#777}
+.faq-list{border-top:1px solid var(--line);align-self:center}
+.faq-item{border-bottom:1px solid var(--line);padding:0}
+.faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:24px 0;font-size:15px;font-weight:650}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary>span{display:flex;align-items:center;gap:22px}
+.faq-item summary small{font:10px 'DM Mono';color:var(--orange)}
+.faq-item summary>b{width:30px;height:30px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;font-size:19px;font-weight:400;transition:transform .25s,background .25s}
+.faq-item[open] summary>b{transform:rotate(45deg);background:var(--orange);border-color:var(--orange);color:#fff}
+.faq-item>p{font-size:12px;line-height:1.9;color:#6c6d67;max-width:520px;margin:0 42px 25px}
+.faq-item summary:focus-visible{outline:2px solid var(--blue);outline-offset:5px}
+@media(max-width:700px){.faq{grid-template-columns:1fr;gap:32px}.faq-head h2{margin:36px 0 14px}.faq-item summary{font-size:13px;padding:20px 0}.faq-item summary>span{gap:13px}.faq-item>p{margin-left:28px}}
