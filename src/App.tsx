@@ -13,7 +13,7 @@ const projects=[
  {n:'02',title:'Good Habit Club',type:'Campaign · Art direction',year:'2025',style:'habit',mark:'GOOD',tag:'A BETTER KIND OF EVERYDAY',summary:'Gündelik rutinleri daha keyifli hale getiren bir topluluk fikri için kampanya konsepti.',idea:'Enerjik renkler, samimi mesajlar ve tekrar kullanılabilir sosyal içerik formatlarıyla pozitif bir dünya.',deliverables:['Kampanya fikri','Sanat yönetimi','Sosyal içerik sistemi']},
  {n:'03',title:'Offscript',type:'Digital experience · Strategy',year:'2024',style:'off',mark:'off.',tag:'BREAK THE ROUTINE',summary:'Alışılmışın dışına çıkmayı odağına alan dijital bir platform için deneyim konsepti.',idea:'Editoryal tipografi, beklenmedik geçişler ve keşfi teşvik eden bir arayüz kurgusu.',deliverables:['Deneyim stratejisi','Arayüz konsepti','Etkileşim dili']}
 ];
-const galleryCards:TumbleCard[]=[{src:import.meta.env.BASE_URL+'work/form-function.svg',alt:'Form / Function marka kimliği konsept görseli'},{src:import.meta.env.BASE_URL+'work/good-habit.svg',alt:'Good Habit Club kampanya konsept görseli'},{src:import.meta.env.BASE_URL+'work/offscript.svg',alt:'Offscript dijital deneyim konsept görseli'}];
+const galleryCards:TumbleCard[]=[{src:'/noventa-creative-website/work/form-function.svg',alt:'Form / Function marka kimliği konsept görseli'},{src:'/noventa-creative-website/work/good-habit.svg',alt:'Good Habit Club kampanya konsept görseli'},{src:'/noventa-creative-website/work/offscript.svg',alt:'Offscript dijital deneyim konsept görseli'}];
 const clients=['NORTH / CO.','MONO','FORME','MOTION LAB','OTHERLAND','GOOD PEOPLE','STUDIO N°9','FUTURE GOODS'];
 
 function ScrollProgress(){const{scrollYProgress}=useScroll();return <motion.div className="scroll-progress" style={{scaleX:scrollYProgress}}/>}
