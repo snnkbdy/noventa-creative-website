@@ -1,0 +1,10 @@
+{
+  "name": "KARAGUŞLAR İNŞAAT",
+  "short_name": "KARAGUŞLAR",
+  "lang": "tr",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#eeeae1",
+  "theme_color": "#eeeae1",
+  "icons": [{"src":"./favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
+}
