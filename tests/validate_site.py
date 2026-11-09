@@ -29,7 +29,7 @@ class SiteParser(HTMLParser):
             self.labels.append(attrs["for"])
         if tag == "img":
             self.images.append(attrs)
-        if tag == "script" and attrs.get("src") is None:
+        if tag == "script" and attrs.get("src") is None and attrs.get("type", "text/javascript") in ("text/javascript", "module"):
             self._script = True
             self._script_text = []
 
