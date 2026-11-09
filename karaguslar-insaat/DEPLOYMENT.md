@@ -13,6 +13,10 @@ Bu klasör bağımsız statik web sitesi olarak hazırlanmıştır; derleme komu
 
 Bu ayar yalnızca `karaguslar-insaat` klasörünü yayınlar; deponun kökündeki diğer site dosyalarına dokunmaz.
 
+## Otomatik kontroller
+
+Depoda `.github/workflows/site-check.yml` iş akışı bulunur. Site dosyaları değiştiğinde bağlantılar, yinelenen kimlikler, yerel dosyalar, görsel alternatif metinleri, form etiketleri, marka yazımı ve satır içi JavaScript sözdizimi denetlenir. GitHub deposunun **Actions** sekmesinden sonuç görülebilir.
+
 ## Yayın öncesi kontrol listesi
 - [ ] Orijinal KARAGUŞLAR İNŞAAT kartal logosunu ekleyin; geçici geometrik işaretle değiştirmeyin.
 - [ ] Gerçek şirket telefonunu, e-posta adresini ve varsa açık adresini ekleyin.
