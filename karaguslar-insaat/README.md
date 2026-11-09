@@ -21,3 +21,12 @@ This folder can be deployed as a static site with Cloudflare Pages. Set the proj
 - Replace concept imagery with approved project photography if available.
 
 All project cards are explicitly labelled as concept visuals; they are not presented as completed client work.
+
+## Automated checks
+The repository runs a GitHub Actions validation workflow when files in this site folder change. It checks duplicate IDs, in-page navigation targets, local assets, image alt text, form labels, brand spelling, core SEO/accessibility features and inline JavaScript syntax.
+
+Run locally from the repository root:
+
+```bash
+python tests/validate_site.py
+```
