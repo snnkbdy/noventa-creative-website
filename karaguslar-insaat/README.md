@@ -17,7 +17,7 @@ This folder can be deployed as a static site with Cloudflare Pages. Set the proj
 ## Before public launch
 - Replace the typographic temporary brand mark with the supplied original KARAGUŞLAR İNŞAAT logo asset.
 - Add verified company phone, email and address only after they are provided.
-- Connect the inquiry form to an approved email/form endpoint if direct submissions are required. It currently prepares a mail draft and does not store or transmit form data.
+- Connect the inquiry form to an approved email/form endpoint if direct submissions are required. It currently validates the fields in the browser, displays a clear status message, and does not store or transmit form data.
 - Replace concept imagery with approved project photography if available.
 
 All project cards are explicitly labelled as concept visuals; they are not presented as completed client work.
