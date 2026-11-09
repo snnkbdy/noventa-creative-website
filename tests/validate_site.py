@@ -52,7 +52,10 @@ id_set = set(parser.ids)
 missing_anchors = sorted({href[1:] for href in parser.links if href.startswith("#") and href[1:] not in id_set})
 assert not missing_anchors, f"Broken in-page links: {missing_anchors}"
 assert "KARAGUŞLAR İNŞAAT" in source, "Brand spelling missing"
-assert "KARAGÜŞLAR" not in source, "Incorrect brand spelling found"
+assert "KARAGÜŞLAR" not in source and "KARAGÜŞLER" not in source, "Incorrect brand spelling found"
+assert 'id="email"' not in source, "Unavailable email field should not be shown"
+assert "mailto:?" not in source, "Form must not open an empty-recipient email draft"
+assert "henüz gönderilmedi" in source, "Form submission status must be transparent"
 assert "<title>" in source and 'name="description"' in source, "SEO title/description missing"
 assert 'name="viewport"' in source, "Viewport metadata missing"
 assert 'id="lead-form"' in source, "Lead form missing"
