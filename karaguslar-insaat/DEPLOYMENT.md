@@ -20,7 +20,7 @@ Depoda `.github/workflows/site-check.yml` iş akışı bulunur. Site dosyaları 
 ## Yayın öncesi kontrol listesi
 - [ ] Orijinal KARAGUŞLAR İNŞAAT kartal logosunu ekleyin; geçici geometrik işaretle değiştirmeyin.
 - [ ] Gerçek şirket telefonunu, e-posta adresini ve varsa açık adresini ekleyin.
-- [ ] Formu, şirketin onayladığı bir alıcı/servis ile bağlayın. Şu an form yalnızca kullanıcının e-posta uygulamasında taslak hazırlar.
+- [ ] Formu, şirketin onayladığı bir alıcı/servis ile bağlayın. Form şu an yalnızca tarayıcıda alanları kontrol eder ve bilgilendirme gösterir; veri saklamaz veya göndermez.
 - [ ] Konsept görsellerini onaylı proje fotoğraflarıyla değiştirin veya konsept etiketlerini koruyun.
 - [ ] Gerçek alan adını bağladıktan sonra canonical, sitemap ve robots ayarlarını o alan adına göre ekleyin.
 
