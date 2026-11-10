@@ -52,10 +52,22 @@ footer{background:#24241f;color:#aaa698;padding:30px 9vw;display:flex;justify-co
 .hero h1 em{font-style:normal;color:#d6bd91}
 .hero-index{font:400 10px var(--sans);letter-spacing:.24em;border-top:1px solid #ffffff88;padding-top:14px}
 @media(max-width:520px){.hero h1{font-size:clamp(48px,14vw,72px)}.hero-canvas{opacity:.48}}
+
+/* Full-bleed editorial interlude inspired by the supplied immersive portfolio references */
+.manifesto{height:min(820px,90svh);min-height:620px;position:relative;overflow:hidden;display:flex;align-items:center;background:#282720;color:#fff;padding:8vw 9vw;isolation:isolate}
+.manifesto-image{position:absolute;z-index:-2;inset:-8%;background:url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=2200&q=90') center 48%/cover;filter:grayscale(.22) saturate(.68);transform:scale(1.08);will-change:transform}
+.manifesto-shade{position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,rgba(20,20,17,.78),rgba(20,20,17,.3) 62%,rgba(20,20,17,.12))}
+.manifesto-content{max-width:850px}.manifesto .kicker{color:#d8c39e}.manifesto h2{font:400 clamp(58px,9vw,124px)/.98 var(--serif);letter-spacing:-.045em;margin:26px 0}.manifesto h2 em{font-style:normal;color:#d3b783}.manifesto p{color:#eee9df;font-size:14px;letter-spacing:.04em;margin-bottom:34px}.manifesto-caption{position:absolute;right:9vw;bottom:8vh;color:#fff9;font-size:9px;letter-spacing:.24em;border-top:1px solid #ffffff70;padding-top:12px}
+.cursor-orbit{position:fixed;z-index:40;left:0;top:0;width:34px;height:34px;border:1px solid rgba(185,154,104,.8);border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);opacity:0;transition:width .25s,height .25s,opacity .25s;mix-blend-mode:multiply}
+.cursor-orbit.active{opacity:1}.cursor-orbit.hover{width:62px;height:62px;background:rgba(185,154,104,.08)}
+.btn,.nav-cta{will-change:transform}
+@media(max-width:850px){.manifesto{min-height:540px;height:75svh;padding:12vw 7vw}.manifesto-caption{right:7vw;bottom:5vh}}
+@media(max-width:520px){.manifesto{min-height:500px}.manifesto h2{font-size:clamp(52px,14vw,76px)}}
+@media(hover:none),(pointer:coarse){.cursor-orbit{display:none}}
 </style>
 </head>
 <body>
-<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div><div class="cursor-orbit" id="cursor-orbit" aria-hidden="true"></div>
 <a class="skip-main" href="#main-content">İçeriğe geç</a>
 <div class="intro" id="intro" aria-label="KARAGUŞLAR İNŞAAT açılış"><div class="intro-inner"><div class="intro-mark">KARAGUŞLAR</div><div class="intro-sub">İNŞAAT</div><div class="intro-line"></div></div><button class="skip" id="skip">ATLA ×</button></div>
 <header id="header"><a class="brand" href="#anasayfa" aria-label="KARAGUŞLAR İNŞAAT ana sayfa"><span class="brand-symbol"></span><span class="brand-name">KARAGUŞLAR<small>İNŞAAT</small></span></a><button class="menu" id="menu" aria-label="Menüyü aç" aria-controls="nav" aria-expanded="false">☰</button><nav class="nav" id="nav"><a href="#hakkimizda">Hakkımızda</a><a href="#hizmetler">Hizmetler</a><a href="#projeler">Projeler</a><a href="#yaklasim">Yaklaşımımız</a><a href="#sss">SSS</a><a class="nav-cta" href="#iletisim">İletişim ↗</a></nav></header>
@@ -74,11 +86,29 @@ footer{background:#24241f;color:#aaa698;padding:30px 9vw;display:flex;justify-co
 <article class="project reveal"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85" alt="Modern konut mimarisi konsept görseli" loading="lazy"><div class="project-label"><small>KONSEPT / 01</small><h3>Doğal Işık Evi</h3><span class="concept">Konsept görsel</span></div></article>
 <article class="project reveal"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85" alt="Çağdaş villa mimarisi konsept görseli" loading="lazy"><div class="project-label"><small>KONSEPT / 02</small><h3>Avlu Villa</h3><span class="concept">Konsept görsel</span></div></article>
 </div></section>
+<section class="manifesto" id="manifesto"><div class="manifesto-image" aria-hidden="true"></div><div class="manifesto-shade"></div><div class="manifesto-content reveal"><span class="kicker">KARAGUŞLAR İNŞAAT / YAKLAŞIM</span><h2>Güçlü yapılar.<br><em>Kalıcı izler.</em></h2><p>Her çizgide bir fikir, her detayda bir sorumluluk.</p><a class="btn primary" href="#iletisim">Projenizi konuşalım <span>↗</span></a></div><span class="manifesto-caption">MİMARİ BİR BAKIŞ / 01</span></section>
 <section class="approach" id="yaklasim"><div class="kicker reveal">Çalışma yaklaşımımız</div><h2 class="section-title reveal">Süreci doğru kurar,<br>detayı önemseriz.</h2><div class="approach-grid"><article class="step reveal"><b>01</b><h3>Dinleriz</h3><p>İhtiyaçları, beklentileri ve proje koşullarını anlamaya odaklanırız.</p></article><article class="step reveal"><b>02</b><h3>Planlarız</h3><p>Kapsamı ve öncelikleri netleştirerek uygulanabilir bir yol haritası oluştururuz.</p></article><article class="step reveal"><b>03</b><h3>Uygularız</h3><p>İş programı, saha koordinasyonu ve kalite odağıyla ilerleriz.</p></article><article class="step reveal"><b>04</b><h3>Tamamlarız</h3><p>Kontrol ve teslim aşamalarını özenli bir süreç olarak ele alırız.</p></article></div></section>
 <section class="faq" id="sss" style="background:var(--paper);padding-top:90px;padding-bottom:90px"><div class="section-top reveal"><div><div class="kicker">Sık sorulanlar</div><h2 class="section-title">İlk görüşmeden önce<br>merak edilenler.</h2></div><p class="section-copy">Projenizin kapsamına göre detaylar ilk görüşmede netleştirilir. Aşağıdaki yanıtlar genel bilgilendirme amaçlıdır.</p></div><div class="faq-list reveal"><details><summary>Hangi bölgelerde hizmet veriyorsunuz?</summary><p>Hizmet bölgesi ve saha koşulları proje konumuna göre değerlendirilir. Talep formunda il ve ilçeyi paylaşabilirsiniz.</p></details><details><summary>Anahtar teslim inşaat hizmeti sunuyor musunuz?</summary><p>Anahtar teslim yapım talepleri; proje kapsamı, teknik gereklilikler ve iş programı birlikte değerlendirilerek ele alınır.</p></details><details><summary>Mevcut yapı yenileme ve güçlendirme talepleri değerlendiriliyor mu?</summary><p>Tadilat, yenileme ve güçlendirme talepleri yapının mevcut durumu ve gerekli uzman incelemeleri çerçevesinde değerlendirilir.</p></details><details><summary>Teklif almak için hangi bilgileri paylaşmalıyım?</summary><p>Proje türü, konum, yaklaşık kapsam ve beklentilerinizi paylaşmanız ilk değerlendirmeyi kolaylaştırır. Kesin fiyat için teknik inceleme gerekebilir.</p></details></div></section>
 <section class="contact" id="iletisim"><div class="reveal"><div class="kicker">İletişim / Proje talebi</div><h2 class="section-title">Birlikte<br>başlayalım.</h2><p class="section-copy">Proje türü ve kapsamına ilişkin bilgileri inceleyin. İletişim kanalı etkinleştirildiğinde talepler buradan iletilebilecektir.</p><div class="contact-details">KARAGUŞLAR İNŞAAT<br>İletişim bilgileri şirket tarafından doğrulandığında bu alanda yayımlanacaktır.</div></div><div class="reveal"><form id="lead-form"><div class="form-grid"><div class="field"><label for="name">Ad Soyad *</label><input id="name" name="name" required autocomplete="name" placeholder="Adınız Soyadınız"></div><div class="field"><label for="phone">Telefon *</label><input id="phone" name="phone" required type="tel" autocomplete="tel" inputmode="tel" pattern="(?=(?:\D*\d){10,})[+0-9() .-]{10,25}" title="Lütfen en az 10 rakam içeren geçerli bir telefon numarası girin." placeholder="05__ ___ __ __"></div><div class="field"><label for="service">Hizmet türü</label><select id="service" name="service"><option value="">Seçiniz</option><option>Konut projesi</option><option>Villa / özel yapı</option><option>Anahtar teslim inşaat</option><option>Taahhüt / altyapı</option><option>Kentsel dönüşüm</option><option>Tadilat / güçlendirme</option><option>Diğer</option></select></div><div class="field full"><label for="location">Proje konumu</label><input id="location" name="location" placeholder="İl / İlçe"></div><div class="field full"><label for="message">Proje detayları</label><textarea id="message" name="message" placeholder="Projenizden kısaca bahsedin..."></textarea></div></div><button class="form-submit" type="submit">Talep bilgilerini kontrol et ↗</button><p class="form-note" id="form-note">Bu form şu an çevrim içi talep iletmez. Bilgileriniz yalnızca bu sayfada kontrol edilir; şirketin onaylı iletişim kanalı bağlanmadan hiçbir veri gönderilmez.</p></form></div></section>
 </main><footer><span>© <span id="year"></span> KARAGUŞLAR İNŞAAT</span><span>Mimari · Yapı · Yaşam</span><a href="#anasayfa">Yukarı dön ↑</a></footer>
 <script>
+
+
+/* Editorial cursor, magnetic CTAs and scroll-linked cinematic image movement */
+(()=>{
+ const fine=matchMedia('(hover:hover) and (pointer:fine)').matches,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if(!fine||reduce)return;
+ const cursor=document.getElementById('cursor-orbit');let cx=-80,cy=-80,tx=-80,ty=-80;
+ addEventListener('pointermove',e=>{tx=e.clientX;ty=e.clientY;if(cursor)cursor.classList.add('active')},{passive:true});
+ const follow=()=>{cx+=(tx-cx)*.18;cy+=(ty-cy)*.18;if(cursor)cursor.style.transform='translate('+cx+'px,'+cy+'px) translate(-50%,-50%)';requestAnimationFrame(follow)};requestAnimationFrame(follow);
+ document.querySelectorAll('a,button,.project,.service').forEach(el=>{el.addEventListener('pointerenter',()=>cursor&&cursor.classList.add('hover'));el.addEventListener('pointerleave',()=>cursor&&cursor.classList.remove('hover'))});
+ document.querySelectorAll('.btn,.nav-cta').forEach(el=>{
+  el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect(),x=(e.clientX-r.left-r.width/2)/r.width,y=(e.clientY-r.top-r.height/2)/r.height;el.style.transform='translate('+x*9+'px,'+y*7+'px)'});
+  el.addEventListener('pointerleave',()=>el.style.transform='');
+ });
+ const manifesto=document.querySelector('.manifesto'),manifestoImage=document.querySelector('.manifesto-image');
+ if(manifesto&&manifestoImage){addEventListener('scroll',()=>{const r=manifesto.getBoundingClientRect(),p=(innerHeight-r.top)/(innerHeight+r.height);manifestoImage.style.transform='scale(1.12) translate3d(0,'+((p-.5)*-48)+'px,0)'},{passive:true})}
+})();
 
 /* Lightweight interactive liquid-particle field: no external library or paid API */
 (()=>{
